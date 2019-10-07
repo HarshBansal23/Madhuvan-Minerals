@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .row {
+            margin-top: 100px;
+            padding: 80px 10px 50px 100px;
+            width: 100%;
+        }
+
+        .card {
+            width: 280px;
+            height: 400px;
+        }
+
+        .front,
+        .back {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            backface-visibility: hidden;
+            position: absolute;
+            transition: transform .6s linear;
+        }
+
+        .front img {
+            height: 100%;
+        }
+
+        .back {
+            background: #f1f1f1;
+            transform: perspective(600px) rotateY(180deg);
+        }
+
+        .front {
+            transform: perspective(600px) rotateY(0deg);
+        }
+
+        .back-content {
+            color: blue;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+        }
+
+        .types a {
+            color: darkgreen;
+        }
+
+        .types a:hover {
+            color: cornflowerblue;
+            font-size: 18px;
+        }
+
+        .card:hover>.front {
+            transform: perspective(600px) rotateY(-180deg);
+        }
+
+        .card:hover>.back {
+            transform: perspective(600px) rotateY(0deg);
+        }
+
+        .detail {
+            border: 1px solid;
+            width: 280px;
+            height: 60px;
+            font-size: 40px;
+            text-align: center;
+            background-color: black;
+            color: aliceblue;
+            padding: 2px;
+            border-radius: 5px;
+        }
+    </style>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            <div class="container-fuild">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                    <div class="container">
+                        <img src="img/MM1.png" alt="" style="height: 100%;width: 20%">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a href="homeMM.html" class="nav-link" id="text">Home</a>
+                                </li>
+                                <li class="nav-item active">
+                                    <a href="ProductsMM.html" class="nav-link" id="text">Products</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="AboutusMM.html" class="nav-link" id="text">About Us</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#contact" class="nav-link" id="text">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card middle1">
+                    <div class="front">
+                        <img src="img/art.png" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <p>types</p>
+                            <ul class="types">
+                                <li class=""><a href="#">type1</a></li>
+                                <li class="ha"><a href="#">type1</a></li>
+                                <li class="ha"><a href="#">type1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="detail">hello</p>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="card middle2">
+                    <div class="front">
+                        <img src="img/art.png" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <p>types</p>
+                            <ul class="types">
+                                <li><a href="#">type1</a></li>
+                                <li><a href="#">type1</a></li>
+                                <li><a href="#">type1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="detail">hello</p>
+            </div>
+            <div class="col-lg-4 col-md-12 col-sm-12">
+
+                <div class="card middle3">
+                    <div class="front">
+                        <img src="img/art.png" alt="">
+                    </div>
+                    <div class="back">
+                        <div class="back-content">
+                            <p>types</p>
+                            <ul class="types">
+                                <li class="ha"><a href="#">type1</a></li>
+                                <li class="ha"><a href="#">type1</a></li>
+                                <li class="ha"><a href="#">type1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p class="detail">hello</p>
+            </div>
+        </div>
+
+        <div class="pop-up">
+            <div class="query">
+                <button class="cm-btn" style="font-size:22px;  width:170px; height:50px;" onclick="document.getElementById('cm-popup').style.display='block'">
+                    Query
+                </button>
+            </div>
+            <!-- Pop up window -->
+            <div id="cm-popup">
+                <!-- header of the pop up window -->
+                <h2 style="width:100%;color:white;padding:5px 15px;background:blueviolet;">
+                    Query
+                </h2>
+                <div style="padding: 15px;">
+                    Phone No. : <input type="phone"><br><br>
+                    E-Mail : <input type="email" style="margin-left: 5%"><br><br>
+                    Query : <input type="text" style="width: 75%; margin-left: 5%"><br><br>
+                    <input type="submit">
+                </div>
+                <div style="padding:2%;overflow:hidden;">
+                    <button class="cm-btn" style="position: fixed; top: 4%; width: 6%;margin-right: 2px;" onclick="document.getElementById('cm-popup').style.display='none'">__
+                    </button></div>
+            </div>
+        </div>
+
+        <div class="footer-distributed" id="contact">
+            <div class="footer-left">
+                <p class="footer-company-name">©MadhuvanMinerals Pvt. Ltd.</p>
+            </div>
+            <div class="footer-center">
+                <div>
+                    <i class="fa fa-map-marker"></i>
+                    <p><span>Address</span>
+                        MP</p>
+                </div>
+                <div>
+                    <i class="fa fa-phone"></i>
+                    <p>+91 0000000000</p><br>
+                </div>
+                <div>
+                    <i class="fa fa-envelope"></i>
+                    <p><a href="#">himanshu@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-icons">
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body></html>
