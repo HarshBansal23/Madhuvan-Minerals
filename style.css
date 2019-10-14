@@ -3,11 +3,21 @@
     margin: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #422419 74%);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .header {
-    position: fixed;
+    position: absolute;
     z-index: 10;
     width: 100%;
-    background-color: blueviolet;
     top: 0;
 }
 
@@ -20,6 +30,13 @@
     padding-left: 10px;
     font-family: sans;
 }
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        background-color: black;
+    }
+}
+
 /*#text{
     color: lightyellow;
 }
@@ -28,15 +45,23 @@
     color: white;
 }*/
 
+.top {
+    box-shadow: 0 0 10px #888888;
+    position: fixed;
+    left: 94%;
+    min-height: 120hv;
+    right: 2%
+}
+
 #cm-popup {
     display: none;
     box-shadow: 0 0 10px #888888;
     position: fixed;
-    left: 79%;
-    top: 60%;
+    left: 83%;
+    top: 50%;
     transform: translateX(-50%);
-    width: 40%;
-    height: 40%;
+    width: 33%;
+    height: 49%;
     background-color: aliceblue;
     right: 1%;
     z-index: 5;
@@ -48,7 +73,7 @@
     color: white;
     border-radius: 2px;
     position: fixed;
-    top: 92%;
+    top: 90%;
     right: 1%;
     z-index: 1;
 }
@@ -69,7 +94,7 @@
 
 
 .footer-distributed {
-    background-color: #2c292f;
+    background-size: cover;
     box-sizing: border-box;
     width: 100%;
     text-align: left;
@@ -90,6 +115,7 @@
 
 .footer-distributed .footer-left {
     width: 30%;
+    margin-left: 2%;
 }
 
 /* Footer links */
@@ -108,15 +134,16 @@
 
 .footer-distributed .footer-company-name {
     color: #8f9296;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 15%;
 }
 
 /* Footer Center */
 
 .footer-distributed .footer-center {
     width: 35%;
+    margin-left: 2%;
 }
 
 .footer-distributed .footer-center i {
@@ -160,6 +187,7 @@
 
 .footer-distributed .footer-right {
     width: 30%;
+    margin-left: 0%;
 }
 
 .footer-distributed .footer-icons {
@@ -185,7 +213,8 @@
 /* You can remove below code if you don't want Footer to be responsive */
 
 
-@media (max-width: 880px) {
+@media (max-width: 1000px) {
+
     .footer-distributed .footer-left,
     .footer-distributed .footer-center,
     .footer-distributed .footer-right {
