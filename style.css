@@ -92,7 +92,6 @@ body {
 
 }
 
-
 .footer-distributed {
     background-size: cover;
     box-sizing: border-box;
@@ -168,14 +167,7 @@ body {
     display: inline-block;
     color: #ffffff;
     vertical-align: middle;
-    margin: 0;
-}
-
-.footer-distributed .footer-center p span {
-    display: block;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 2;
+    margin: 1%;
 }
 
 .footer-distributed .footer-center p a {

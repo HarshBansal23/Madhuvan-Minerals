@@ -1,90 +1,94 @@
 <!DOCTYPE html>
 <html>
-<style>
-    * {
-        box-sizing: border-box;
-    }
 
-    /* Create two equal columns that floats next to each other */
-    img:hover {
-        transform: scale(1.01, 1.01);
-        /*        transform: translate(2px,-2px);*/
-        cursor: pointer;
-        border-radius: 10px;
-    }
+<head>
+    <title>Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    .row {
-        margin-top: 8%;
-        width: 100%;
-        margin-left: 20px;
-    }
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-    img {
-        border-radius: 10px;
+        /* Create two equal columns that floats next to each other */
+        img:hover {
+            transform: scale(1.01, 1.01);
+            /*        transform: translate(2px,-2px);*/
+            cursor: pointer;
+            border-radius: 10px;
+        }
 
-    }
+        .row {
+            margin-top: 8%;
+            width: 100%;
+            margin-left: 20px;
+        }
 
-    .column1 {
-        float: left;
-        width: 49%;
-        height: 30%;
-        margin-left: 2%;
+        img {
+            border-radius: 10px;
 
-    }
+        }
 
-    .column2 {
+        .column1 {
+            float: left;
+            width: 49%;
+            height: 30%;
+            margin-left: 2%;
 
-        float: left;
-        width: 29%;
-        height: 100%%;
-    }
+        }
 
-    .column3 {
+        .column2 {
 
-        float: left;
-        width: 20%;
-    }
+            float: left;
+            width: 29%;
+            height: 100%%;
+        }
 
-    .column4 {
+        .column3 {
 
-        float: left;
-        width: 39%;
-        height: 25%;
-        margin-left: 2%;
-    }
+            float: left;
+            width: 20%;
+        }
 
-    .column5 {
-        float: left;
-        width: 59%;
-        padding: 5px;
-    }
+        .column4 {
 
-    /*
-.column1 img,.column2 img,.column3 img,.column5 img,.column4 img {
-  margin-top: -2px;
-}
-*/
+            float: left;
+            width: 39%;
+            height: 25%;
+            margin-left: 2%;
+        }
 
-    /* Clear floats after the columns */
-    .row:after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-</style>
+        .column5 {
+            float: left;
+            width: 59%;
+            padding: 5px;
+        }
 
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    </style>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="style.css">
 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
-<link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+
+</head>
 
 <body>
 
@@ -179,38 +183,40 @@
     </div>
 
     <div class="footer-distributed" id="contact">
-            <div class="footer-left">
-                <p class="footer-company-name">©MadhuvanMinerals Pvt. Ltd.</p>
+        <div class="footer-left">
+            <p class="footer-company-name">©MadhuvanMinerals Pvt. Ltd.</p>
+        </div>
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i><span>
+                    <p>Address</p>
+                </span>
+                <p style="margin-left: 16%;">
+                    Madhuvan Minerals and Industries</p><br>
+                <p style="margin-left: 16%;">Jatara Tikamgarh,M.P</p><br>
+                <p style="margin-left: 16%;">Pin Code-472118</p>
             </div>
-            <div class="footer-center">
-                <div>
-                    <i class="fa fa-map-marker"></i><span>
-                        <p>Address</p>
-                    </span>
-                    <p style="margin-left: 16%;">
-                        Madhuvan Minerals and Industries</p><br>
-                    <p style="margin-left: 16%;">Jatara Tikamgarh,M.P</p><br>
-                    <p style="margin-left: 16%;">Pin Code-472118</p>
-                </div>
-                <div>
-                    <div><i class="fa fa-phone"></i>
-                        <p>+91 9755421008</p><br>
-                        <p style="margin-left: 16%;">+91 9425425468</p><br>
-                    </div>
-                </div>
-                <div>
-                    <i class="fa fa-envelope"></i>
-                    <p><a href="#">himanshu@gmail.com</a></p>
+            <div>
+                <div><i class="fa fa-phone"></i>
+                    <p>+91 9755421008</p><br>
+                    <p style="margin-left: 16%;">+91 9425425468</p><br>
                 </div>
             </div>
-            <div class="footer-right">
-                <div class="footer-icons">
-                    <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
-                </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">himanshu@gmail.com</a></p>
             </div>
         </div>
+        <div class="footer-right">
+            <div class="footer-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
 
-</body></html>
+</body>
+
+</html>
