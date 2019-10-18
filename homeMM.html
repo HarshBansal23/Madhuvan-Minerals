@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -76,17 +76,18 @@
         #slide3 {}
 
         #slide i {
-            font-size: 5vw;
+            font-size: 4vw;
             color: white;
             background-color: black;
             width: 30%;
-            height: 12%;
+            height: 11%;
         }
 
         #slide i:hover {
-            font-size: 6vw;
+            font-size: 5vw;
             color: white;
             background-color: black;
+            height: 12%;
         }
 
         .map {
@@ -98,13 +99,34 @@
             width: 20%;
         }
 
+        .name {
+            float: left;
+            width: 23%;
+            height: 10% margin-top: 6px;
+            padding: 5px;
+        }
+
+        .detail {
+            float: left;
+            width: 72%;
+            height: 10% margin-top: 6px;
+            font-size: 1vw;
+        }
+
+        .submit {
+            color: white;
+            padding: 12px 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 30%;
+        }
     </style>
 
     <script>
         $(document).on('click', '.carousel-control-next-icon', function(e) {
             $('#video').video('pause');
         });
-
     </script>
 
     <link rel="stylesheet" href="style.css">
@@ -229,7 +251,7 @@
 
         <div class="map">
             <a href="https://www.google.co.in/maps/place/madhuvan+minerals/@25.0954466,78.5194565,9z/data=!4m5!3m4!1s0x3978163ae4d28ce7:0x8bd98e407e058841!8m2!3d25.0047039!4d79.0327133" target="_blank"> <img src="img/map1.png" alt="">
-                <p style="width: 20%;text-align: center;padding: 2%;text-decoration: none;color: white;font-family: sans;font-size: 1.7vw;"><i class="fa fa-map-marker"></i> Find Us</p>
+                <p style="width: 20%;text-align: center;padding: 2%;text-decoration: none;color: white;font-family: monospace;font-size: 2vw;"><i class="fa fa-map-marker"></i> Find Us</p>
             </a>
         </div>
 
@@ -243,7 +265,7 @@
 
         <div class="pop-up">
             <div class="query">
-                <button class="cm-btn" style="font-size:22px;  width:170px; height:50px;" onclick="document.getElementById('cm-popup').style.display='block'">
+                <button class="cm-btn" style="font-size:2vw;  width:15%; height:8%;" onclick="document.getElementById('cm-popup').style.display='block'">
                     Query
                 </button>
             </div>
@@ -253,13 +275,45 @@
                 <h2 style="width:100%;color:white;padding:5px 15px;background-color: gray">
                     Query
                 </h2>
-                <div style="padding: 15px;">
-                    Name : <input type="text" style="margin-left: 30px"><br><br>
-                    Phone No. : <input type="phone"><br><br>
-                    E-Mail : <input type="email" style="margin-left: 30px"><br><br>
-                    Query : <textarea name="" id="" cols="40" rows="1" style="margin-left: 30px"></textarea><br><br>
-                    <input type="submit">
+                <div style="padding: 15px;" id="detail">
+                    <div class="row">
+                        <div class="name">
+                            <label for="name">Name : </label>
+                        </div>
+                        <div class="detail">
+                            <input type="text" id="name" name="name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="name">
+                            <label for="phone">Phone No. : </label>
+                        </div>
+                        <div class="detail">
+                            <input type="text" id="phone" name="phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="name">
+                            <label for="email">E-Mail : </label>
+                        </div>
+                        <div class="detail">
+                            <input type="email" id="email" name="email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="name">
+                            <label for="query">Query : </label>
+                        </div>
+
+                        <div class="detail">
+                            <textarea id="query" name="query" style="height:10vh"></textarea>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" value="Submit">
+                    </div>
                 </div>
+
                 <div style="padding:2%;overflow:hidden;">
                     <button class="cm-btn" style="position: fixed; top: 4%; width: 6%;margin-right: 2px;" onclick="document.getElementById('cm-popup').style.display='none'">__
                     </button></div>
@@ -272,16 +326,17 @@
             </div>
             <div class="footer-center">
                 <div>
-                    <i class="fa fa-map-marker"></i><span>
+                    <i class="fa fa-map-marker"></i>
+                    <span>
                         <p>Madhuvan Minerals and Industries</p>
-                        <p style="margin-left: 16%;">Jatara Tikamgarh,M.P</p><br>
-                        <p style="margin-left: 16%;">Pin Code-472118</p>
+                        <p style="margin-left: 17%;margin-top: -5%;">Jatara Tikamgarh,M.P</p><br>
+                        <p style="margin-left: 17%;margin-top: -2%;">Pin Code-472118</p>
                     </span>
                 </div>
                 <div>
                     <div><i class="fa fa-phone"></i>
                         <p>+91 9755421008</p><br>
-                        <p style="margin-left: 16%;">+91 9425425468</p><br>
+                        <p style="margin-left: 17%;margin-top: -5%;">+91 9425425468</p><br>
                     </div>
                 </div>
                 <div>
@@ -300,6 +355,4 @@
         </div>
     </div>
 
-</body>
-
-</html>
+</body></html>
