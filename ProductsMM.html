@@ -5,9 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products</title>
+    <link rel="icon" href="img/MMs.png" type="image/x-icon">
     <style>
         .row {
-            margin-top: 8%;
+            margin-top: 2%;
             width: 100%;
             background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/mines2.jpg);
             background-position: center;
@@ -180,58 +181,43 @@
             transform: scale(1.02);
             transition: .5s;
         }
-
     </style>
 
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
-    <div class="header" id="head">
-        <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container">
-                    <img src="#" alt="" style="height: 100%;width: 20%">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggler navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto" style="text-align: center;">
-                            <li class="nav-item">
-                                <a href="HomeMM.html" class="nav-link" id="text"><i class="fa fa-home"></i> Home</a>
-                            </li>
-                            <li class="nav-item active">
-                                <a href="ProductsMM.html" class="nav-link" id="text">Products</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="AboutusMM.html" class="nav-link" id="text">About Us</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="Gallery.html" class="nav-link" id="text"><i class="fa fa-image"></i> Gallery</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#contact" class="nav-link" id="text"><i class="fa fa-phone"></i> Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+
+    <div class="header">
+        <div class="img1">
+            <img src="img/MMs.png" id="img2" style="height: 90%;width: 100%">
+            <img src="img/MM.png" alt="" style="height: 90%;width: 100%" id="img"></div>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+        <div class="menu">
+            <ul class="menu1">
+                <a href="HomeMM.html"><i class="fa fa-home" aria-hidden="true" style="font-size: 20px;padding: 5px;"></i><span>Home</span></a>
+                <a href="ProductsMM.html" style="color: #50C878;"><i class="fa fa-shopping-bag" aria-hidden="true" style="font-size: 20px;margin: 5px"></i><span>Products</span></a>
+                <a href="Gallery.html"><i class="fa fa-picture-o" aria-hidden="true" style="font-size: 20px;margin: 5px"></i><span>Gallery</span></a>
+                <a href=""><i class="fa fa-users" aria-hidden="true" style="font-size: 18px;margin: 5px"></i><span>About Us</span></a>
+                <a href="#contact"><i class="fa fa-phone" aria-hidden="true" style="font-size: 18px;margin: 5px"></i><span>Contact Us</span></a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
         </div>
     </div>
-
     <div class="row" style="margin-left: 0px;">
         <div class="col-md-6 col-xs-12">
             <div class="card" id="card1">
@@ -383,6 +369,4 @@
         </div>
     </div>
 
-</body>
-
-</html>
+</body></html>

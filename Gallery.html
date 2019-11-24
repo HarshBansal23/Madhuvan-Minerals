@@ -5,25 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galley</title>
-
+    <link rel="icon" href="img/MMs.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
-
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-
+    <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" href="LogoMMSmallPNG.png" type="image/x-icon">
-    <style>
-        body {
-            background-color: #333;
-        }
 
+    <style>
         .customdiv {
             min-height: 100px;
             background-color: gray;
@@ -46,11 +39,40 @@
             padding-right: 0px;
              !important;
         }
+
+
+        #tag {
+            line-height: 100px;
+            float: left;
+        }
     </style>
 
 </head>
 
 <body>
+
+    <div class="header">
+        <div class="img1">
+            <img src="img/MMs.png" id="img2" style="height: 90%;width: 100%">
+            <img src="img/MM.png" alt="" style="height: 90%;width: 100%" id="img"></div>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fas fa-ellipsis-h"></i>
+        </label>
+        <div class="menu">
+            <ul class="menu1">
+                <a href="HomeMM.html"><i class="fa fa-home" aria-hidden="true" style="font-size: 20px;padding: 5px;"></i><span>Home</span></a>
+                <a href="ProductsMM.html"><i class="fa fa-shopping-bag" aria-hidden="true" style="font-size: 20px;margin: 5px"></i><span>Products</span></a>
+                <a href="Gallery.html" style="color: #50C878;"><i class="fa fa-picture-o" aria-hidden="true" style="font-size: 20px;margin: 5px"></i><span>Gallery</span></a>
+                <a href=""><i class="fa fa-users" aria-hidden="true" style="font-size: 18px;margin: 5px"></i><span>About Us</span></a>
+                <a href="#contact"><i class="fa fa-phone" aria-hidden="true" style="font-size: 18px;margin: 5px"></i><span>Contact Us</span></a>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
+            </ul>
+        </div>
+    </div>
+
     <div class="container-fluid">
         <div class="row">
             <div class=" col-xs-12 col-sm-6 col-md-3 col-lg-4 no-padding">
