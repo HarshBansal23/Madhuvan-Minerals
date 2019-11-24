@@ -8,16 +8,14 @@ html {
 }
 
 body {
-    background-color: #000000;
-    background-image: linear-gradient(315deg, #000000 0%, #422419 74%);
-    background-size: cover;
-    background-repeat: no-repeat;
     width: 100%;
     height: 100%;
+    margin: 0px;
 }
 
 .header {
     position: absolute;
+    background-color: #443266;
     z-index: 10;
     width: 100%;
     top: 0;
@@ -33,9 +31,6 @@ body {
     font-family: sans;
 }
 
-.navbar-toggler-icon {
-    font-size: 3vw;
-}
 
 @media (max-width: 991px) {
     .navbar-nav {
@@ -48,102 +43,17 @@ body {
     }
 }
 
-/*#text{
-    color: lightyellow;
-}
-#text:hover{
-    font-size: 22px;
-    color: white;
-}*/
-
-/*
-.top {
-    box-shadow: 0 0 10px #888888;
-    position: fixed;
-    left: 94%;
-    min-height: 120hv;
-    right: 2%
-}
-*/
-
-/*
-#cm-popup {
-    display: none;
-    box-shadow: 0 0 10px #888888;
-    position: fixed;
-    left: 83%;
-    top: 50%;
-    transform: translateX(-50%);
-    width: 33%;
-    height: 49%;
-    background-color: aliceblue;
-    right: 1%;
-    z-index: 5;
-}
-
-.cm-btn {
-    border: none;
-    background: #555;
-    color: white;
-    border-radius: 2px;
-    position: fixed;
-    top: 90%;
-    right: 1%;
-    z-index: 1;
-}
-
-.pop-up {
-    float: right;
-}
-
-
-.detail {
-    float: left;
-    width: 60%;
-    height: 10%;
-    margin-top: 6px;
-    font-size: 1vw;
-}
-
-        .name {
-            float: left;
-            width: 23%;
-            height: 10%;
-            margin-top: 6px;
-            padding: 5px;
-        }
-
-.submit {
-    width: 20%;
-    float: right;
-}
-
-
-#detail input {
-    width: 100%
-}
-
-.query {}
-
-
-@media(max-height: 600px) {
-    .pop-up {
-        display: none;
-        visibility: hidden;
-    }
-
-}
-*/
-
 .footer-distributed {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/mines8.jpg);
     background-size: cover;
     box-sizing: border-box;
     width: 100%;
+    position: absolute;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 50px 50px 60px 50px;
+    padding: 50px 50px 50px 50px;
     margin-bottom: 0%;
-    margin-top: 5%;
+
 }
 
 .footer-distributed .footer-left,
@@ -182,7 +92,7 @@ body {
 }
 
 .footer-distributed .footer-left i {
-    background-color: #e6e4e4;
+    background-color: white;
     color: darkblue;
     font-size: 25px;
     width: 38px;
@@ -210,7 +120,7 @@ body {
 
 .footer-distributed .footer-left p {
     display: inline-block;
-    color: #ffffff;
+    color: whitesmoke;
     vertical-align: middle;
     margin: 1%;
 }
@@ -221,13 +131,20 @@ body {
 }
 
 .footer-distributed .footer-center {
-    width: 25%;
+    width: 20%;
+    height: 120px;
     margin-left: 2%;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 
-.footer-distributed .footer-center .img {
-    width: 90%;
+.footer-distributed .footer-center #img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-distributed .footer-center #img2 {
+    display: none;
+    width: 100%;
     height: 100%;
 }
 
@@ -243,9 +160,13 @@ body {
     margin-left: 5%;
 }
 
+.footer-icons i:hover {
+    transform: translateY(-1px);
+}
+
 .footer-distributed .footer-icons p {
     display: inline-block;
-    color: #ffffff;
+    color: whitesmoke;
     vertical-align: middle;
     margin: 1%;
 }
@@ -254,7 +175,7 @@ body {
     width: 35px;
     height: 35px;
     cursor: pointer;
-    background-color: #e6e4e4;
+    background-color: white;
     border-radius: 5px;
     font-size: 20px;
     color: darkblue;
@@ -280,7 +201,7 @@ body {
     }
 
     .footer-distributed .footer-right {
-        margin-top: 0px;
+        margin-top: -50px;
     }
 
     .footer-distributed .footer-right p {
@@ -289,11 +210,17 @@ body {
 
     .footer-distributed .footer-right .footer-icons i {
         float: left;
-        margin-left: 12%;
+        margin-left: 15%;
+    }
+
+    .footer-distributed .footer-center #img2 {
+        width: 25%;
+        height: 100%;
+        transform: translate(150%, -10%)
     }
 
     .footer-distributed .footer-left i {
-        margin-left: 0;
+        margin-left: 0px;
     }
 
     .footer-distributed .footer-left .add p {
@@ -301,7 +228,17 @@ body {
     }
 
     .footer-distributed .footer-center .img {
-        width: 50%;
+        width: 40%;
         height: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .footer-distributed .footer-center #img {
+        display: none;
+    }
+
+    .footer-distributed .footer-center #img2 {
+        display: block;
     }
 }
