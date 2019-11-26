@@ -160,7 +160,7 @@ body {
         padding: 20px;
     }
 
-    span {
+    .menu1 span {
         display: inline;
     }
 
@@ -191,8 +191,9 @@ body {
 
 /* Footer*/
 .footer-distributed {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/mines8.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/mines5.jpg);
     background-size: cover;
+    background-attachment: fixed;
     box-sizing: border-box;
     width: 100%;
     position: absolute;
@@ -357,7 +358,7 @@ body {
 
     .footer-distributed .footer-right .footer-icons i {
         float: left;
-        margin-left: 15%;
+        margin-left: 14%;
     }
 
     .footer-distributed .footer-center #img2 {
