@@ -89,7 +89,8 @@
         .p1 p {
             border: 0px solid;
             border-left-width: 4px;
-            border-left-color: #01dbf5;
+            border-left-color: #333;
+            ;
             padding: 0px 8px;
             margin-left: 10%;
             margin-top: 2%;
@@ -217,23 +218,10 @@
             color: #4CAF50;
             transition: .5s;
         }
+
     </style>
 
     <script>
-        onload = start;
-
-        function start() {
-            var i = 0;
-
-            function Move() {
-                i = (i % 5) + 1;
-                //5 is the Number of image in slider
-                document.getElementById('id' + i).checked = true;
-            }
-            setInterval(Move, 3000);
-            //change image in 3 sec
-        }
-
         function mouseoverEvent(controlID) {
             var control = document.getElementById(controlID);
             control.style.transform = "scale(1.1)";
@@ -245,6 +233,7 @@
             control.style.transform = "scale(1)";
             control.style.transition = ".4s";
         }
+
     </script>
 
     <link rel="stylesheet" href="style.css">
@@ -269,7 +258,7 @@
                         <span class="navbar-toggler-icon" style="font-size: 3vw;"></span>
                     </button></div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent" style="z-index: 50;">
-                    <ul class="navbar-nav ml-auto">
+                    <ul class="navbar-nav ml-auto" style="font-family: ">
                         <li class="nav-item active">
                             <a href="#" class="nav-link" id="text0" style="color: #50C878;"><i class="fa fa-home" aria-hidden="true" style="font-size: 20px;margin: 5px"></i>Home</a>
                         </li>
@@ -280,7 +269,7 @@
                             <a href="Gallery.html" class="nav-link" id="text0"><i class="fa fa-picture-o" aria-hidden="true" style="font-size: 20px;margin: 5px"></i>Gallery</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link" id="text0"><i class="fa fa-users" aria-hidden="true" style="font-size: 18px;margin: 5px"></i>About Us</a>
+                            <a href="A2.html" class="nav-link" id="text0"><i class="fa fa-users" aria-hidden="true" style="font-size: 18px;margin: 5px"></i>About Us</a>
                         </li>
                         <li class="nav-item">
                             <a href="#contact" class="nav-link" id="text0"><i class="fa fa-phone" aria-hidden="true" style="font-size: 18px;margin: 5px;"></i>Contact Us</a>
@@ -301,18 +290,18 @@
         <p class="p2">
             Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. </p>
     </div>
-    <div class="video_slide" style="background-image: url(../images/bgv1.jpg);margin: 50px auto;padding-top: 1px; padding-bottom: 18px;">
+    <div class="video_slide" style="background-color: gainsboro;margin: 50px auto;padding-top: 1px; padding-bottom: 18px;">
         <div class="carousel slide" data-interval="3000000" data-ride="carousel" id="video0">
             <div class="carousel-inner" style="border: 1px solid white">
                 <div class="carousel-item active">
                     <video controls id="video1">
-                        <source src="../MM_gitrepo/Alan_Walker.mp4" type="video/mp4">
+                        <source src="MM.mp4" type="video/mp4">
                         <source src="movie.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                     </video></div>
                 <div class="carousel-item">
                     <video controls id="video1">
-                        <source src="../MM_gitrepo/Alan_Walker.mp4" type="video/mp4">
+                        <source src="MM.mp4" type="video/mp4">
                         <source src="movie.ogg" type="video/ogg">
                         Your browser does not support the video tag.
                     </video></div>
@@ -327,7 +316,7 @@
     </div>
     <div class="box" style="width: 96%">
         <div class="p1">
-            <p style="font-size: 20px;padding-left: 20px">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+            <p style="font-size: 20px;padding-left: 20px; ">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
             </p>
         </div>
     </div>
@@ -403,4 +392,6 @@
             </div>
         </div>
     </div>
-</body></html>
+</body>
+
+</html>
